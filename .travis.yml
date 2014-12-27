@@ -1,0 +1,8 @@
+
+language: python
+python:
+  - "2.7"
+install:
+  - pip install -e .
+script: TANK_MAVEN_SETTINGS='tank_maven.settings.test' nosetests tests
+

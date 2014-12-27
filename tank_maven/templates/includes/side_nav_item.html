@@ -1,0 +1,8 @@
+
+
+<li{% if is_current %} class="active"{% end %}>
+  <a href="{{ url }}" title="{{ title }}">
+    {{ title }}{% if is_current %} <span class="sr-only">(current)</span>{% end %}
+  </a>
+</li>
+

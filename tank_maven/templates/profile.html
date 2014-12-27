@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1 class="page-header">Edit Profile</h1>
+
+<form action="." method="POST" role="form">{% module xsrf_form_html() %}
+  {% module FormModule(field=form.username) %}
+  {% module FormModule(field=form.email) %}
+
+  <button class="btn btn-default" type="submit">
+    Update
+  </button>
+</form>
+{% end %}
+

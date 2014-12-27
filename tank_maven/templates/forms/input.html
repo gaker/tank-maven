@@ -1,0 +1,21 @@
+
+<div class="form-group {% if errors %}has-error has-feedback{% end %}">
+  {% raw label %}
+  {% raw field %}
+
+  {% if errors %}
+    <span class="glyphicon glyphicon-remove form-control-feedback" aria-hidden="true"></span>
+  {% end %}
+  {% if errors %}
+    <span class="help-block">
+      <ul class="list-unstyled">
+        {% for error in errors %}
+        <li>{{ error }}</li>
+        {% end %}
+      </ul>
+    </span>
+  {% end %}
+
+
+</div>
+

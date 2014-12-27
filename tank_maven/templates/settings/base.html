@@ -1,0 +1,9 @@
+{% extends "../base.html" %}
+
+{% block side_nav %}
+  {% for name, title in valid_settings.items() %}
+    {% module SideNavItem('setting', name, title) %}
+  {% end %}
+{% end %}
+
+

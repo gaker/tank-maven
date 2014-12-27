@@ -1,0 +1,8 @@
+*.pyc
+*egg-info/
+node_modules/*
+bower_components/*
+docs/_build/*
+tmp/db.sql
+tank_maven/tmp/db.sql
+

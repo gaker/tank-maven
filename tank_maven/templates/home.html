@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+
+{% block content %}
+<h1 class="page-header">Dashboard</h1>
+
+{% end %}
+
+
+{% block extra_js %}
+    var temp_data = {% raw json_encode(temp_data) %};
+{% end %}
+
